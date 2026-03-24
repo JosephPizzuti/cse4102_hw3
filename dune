@@ -1,0 +1,13 @@
+(ocamllex
+  (modules lexer)
+)
+
+(menhir
+  (modules parser)
+  (flags --exn-carries-state)
+)
+
+(executable
+  (name main)
+  (flags :standard -warn-error -27-39)
+)
